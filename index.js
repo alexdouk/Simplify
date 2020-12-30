@@ -164,7 +164,12 @@ function renderProblemWithServer(targetLink){
  }
 
 
-ScrollReveal().reveal('.headline')
-ScrollReveal().reveal('.tagline', { delay: 1000})
-ScrollReveal().reveal('.punchline', { delay: 2000 })
-ScrollReveal().reveal('.tagline', { scale: 2.5 });
+
+
+
+if (document.documentElement.clientWidth > 900) {
+	ScrollReveal().reveal('.headline')
+    ScrollReveal().reveal('.tagline', { delay: 1000})
+    ScrollReveal().reveal('.punchline', { delay: 2000 })
+    ScrollReveal().reveal('.tagline', { scale: 2.5 });
+ }

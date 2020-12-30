@@ -6,8 +6,10 @@ html.sr .load-hidden {
   visibility: hidden;
 }
 
+
 body{
   background-color: #fdb827;
+  margin:0;
 }
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -92,7 +94,6 @@ button:hover{
 }
 
 
-
 @media only screen and (max-width: 1300px) {
 
   .form , .response{
@@ -125,8 +126,8 @@ button:hover{
   .response__output-link{
     font-size: 1rem;
     font-weight: 300;
-    
   }
+
   
 }
 
@@ -139,8 +140,9 @@ button:hover{
   }
 }
 
-/* @media only screen and (max-width: 400px) {
+@media only screen and (max-width: 400px) {
   .tagline{
     font-size: 12vh;
   }
-} */
+
+}
