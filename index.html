@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Simplify URL</title>
+  <meta name="description" content="Web application for shortening links. Cut your URL Adress by one click.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <html lang="en-EN"></html>
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://unpkg.com/scrollreveal@4"></script>
+  
+
+</head>
+
+<body>
+
+
+<div class="header">
+  <h1 class="headline">Paste</h1>
+  <h1 class="tagline">Simplify</h1>
+  <h1 class="punchline">Copy</h1>
+</div>
+
+
+      <div class="container">
+        <form class="form">
+          <input type="url" title="Place link here" placeholder="Paste your URL link here.." data-error-text="Fill this field" class="form__input">
+          <button class="button--form button--full button" type="submit">Simplify!</button>
+          <span class="form__error"></span>
+        </form>
+        <div class="response-wrapper">
+        </div>
+      </div>
+
+
+<script src="index.js" charset="utf-8"></script>
+</body>
+
+</html>

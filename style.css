@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@100;300;400&display=swap');
+
+html.sr .load-hidden {
+  visibility: hidden;
+}
+
+body{
+  background-color: #fdb827;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgb(255, 33, 33);
+  
+}
+
+button:hover{
+  color: rgb(255, 33, 33);
+}
+
+/* absolute centering of the input field */
+.container{
+  position:fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.response-wrapper{
+  position: fixed;
+  width:40vw;
+}
+
+.response-wrapper p{
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  padding: 10px;
+  /* font-weight: 300; */
+}
+
+.response button{
+  font-family: 'Bangers', cursive;
+  background-color: transparent;
+  outline: none;
+  border-color: black; 
+  width:98%;
+  border-style: none;
+  font-size: 4rem;
+  cursor:pointer;
+  text-decoration: underline;
+}
+
+
+.form input{
+  width: 30vw;
+  font-family: 'Bangers', cursive;
+  background-color: transparent;
+  padding:20px;
+  outline: none;
+  border-color: black;
+}
+
+.form button{
+  font-family: 'Bangers', cursive;
+  background-color: transparent;
+  padding:20px;
+  outline: none;
+  border-color: black;
+  cursor:pointer;
+}
+
+
+
+
+.header{
+  display: flex;
+  justify-content: space-around;
+  font-family: 'Bangers', cursive;
+  letter-spacing: 0.5pc;
+  font-size: 10vh;
+}
+
+.headline , .punchline{
+  font-size: 8vh;
+}
+
+.response__output-link{
+  font-weight: 400;
+}
+.response__input-link{
+  font-weight: 100;
+}
+
+
+
+@media only screen and (max-width: 1300px) {
+
+  .form , .response{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    width: 100vw;
+  }
+
+  .headline , .punchline{
+    display: none;
+  }
+
+  .form input , .response p {
+    width:100%;
+    text-align: center;
+    margin: 0 5% 10px 5%;
+  }
+  .form button , .response button{
+    width:100%;
+    margin: 0 5% 10px 5%;
+  }
+  
+  .tagline{
+    font-size: 14vh;
+  }
+
+  .response__output-link{
+    font-size: 1rem;
+    font-weight: 300;
+    
+  }
+  
+}
+
+@media only screen and (max-width: 560px) {
+  .tagline{
+    font-size: 12vh;
+  }
+  .response button{
+    font-size: 3rem;
+  }
+}
+
+/* @media only screen and (max-width: 400px) {
+  .tagline{
+    font-size: 12vh;
+  }
+} */
